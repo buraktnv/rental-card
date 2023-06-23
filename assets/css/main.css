@@ -17,6 +17,9 @@ input {
   -moz-appearance: none;
   appearance: none;
 }
+input:focus {
+  outline: none;
+}
 
 body {
   background-color: #f5f3e6;
@@ -62,8 +65,84 @@ body {
   border: none;
   background-color: #fe6f4f;
   font-size: 24px;
+  cursor: pointer;
+}
+.button:hover {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
 }
 
+@-webkit-keyframes shake {
+  0% {
+    transform: rotate(1deg);
+  }
+  10% {
+    transform: rotate(2deg);
+  }
+  20% {
+    transform: rotate(5deg);
+  }
+  30% {
+    transform: rotate(2deg);
+  }
+  40% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  60% {
+    transform: rotate(-5deg);
+  }
+  70% {
+    transform: rotate(-3deg);
+  }
+  80% {
+    transform: rotate(1deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(1deg);
+  }
+  10% {
+    transform: rotate(2deg);
+  }
+  20% {
+    transform: rotate(5deg);
+  }
+  30% {
+    transform: rotate(2deg);
+  }
+  40% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  60% {
+    transform: rotate(-5deg);
+  }
+  70% {
+    transform: rotate(-3deg);
+  }
+  80% {
+    transform: rotate(1deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .title {
   font-family: "Merriweather", serif;
   font-size: 32px;
