@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <title>Homework</title>
+
+    <script src="./assets/js/momentjs.com_downloads_moment.js"></script>
+  </head>
+
+  <body>
+    <section class="rental">
+      <p class="title">Search for a rental car</p>
+      <form class="rental__form -gap-lg">
+        <div class="group -column -gap-xxs -mb-lg">
+          <label for="pickup-input" class="label">Pick up location</label>
+          <input
+            id="pickup-input"
+            type="text"
+            class="input -search -mb-xs"
+            placeholder="City, airport, region, district..."
+          />
+
+          <label for="deliver-input" class="label -unvisible"
+            >Deliver location</label
+          >
+          <input
+            id="deliver-input"
+            type="text"
+            class="input -search -mb-xs -unvisible"
+            placeholder="City, airport, region, district..."
+          />
+
+          <div class="group -row -gap-xxs">
+            <input
+              type="checkbox"
+              class="input -checkbox"
+              id="checkbox-option"
+            />
+            <label for="checkbox-option" class="label -lg"
+              >Deliver the car somewhere else</label
+            >
+          </div>
+        </div>
+        <div class="group -row -gap-sm -mb-lg">
+          <div class="group -column -gap-xxs">
+            <label for="pickDate" class="label">Date of pickup</label>
+            <div class="date-picker">
+              <img
+                class="date-picker__icon-calendar"
+                src="./assets/icons/calendar.svg"
+                alt="calendar-icon"
+              />
+
+              <p id="pickUpData">Wed. 26 March 2022</p>
+              <img
+                class="date-picker__icon-dropdown"
+                src="./assets/icons/dropdown.svg"
+                alt="dropdown-icon"
+              />
+              <input
+                class="input -date"
+                type="date"
+                name="pickup-date"
+                value="2022-03-26"
+                id="pickDate"
+              />
+            </div>
+            <div class="date-picker">
+              <img
+                class="date-picker__icon-calendar"
+                src="./assets/icons/clock.svg"
+                alt="clock-icon"
+              />
+
+              <p id="pickUpTimeData" class="date-picker__icon-time">10:00</p>
+              <img
+                class="date-picker__icon-dropdown"
+                src="./assets/icons/dropdown.svg"
+                alt="dropdown-icon"
+              />
+              <input
+                class="input -time"
+                type="time"
+                name="pickup-time"
+                value="10:00"
+                id="pickTime"
+              />
+            </div>
+          </div>
+          <div class="group -column -gap-xxs">
+            <label for="delivery-date" class="label">Date of delivery</label>
+            <div class="date-picker">
+              <img
+                class="date-picker__icon-calendar"
+                src="./assets/icons/calendar.svg"
+                alt="calendar-icon"
+              />
+
+              <p id="pickUpData">Tue. 29 Mar 2022</p>
+              <img
+                class="date-picker__icon-dropdown"
+                src="./assets/icons/dropdown.svg"
+                alt="dropdown-icon"
+              />
+              <input
+                class="input -date"
+                type="date"
+                name="pickup-date"
+                value="2022-03-26"
+                id="pickDate"
+              />
+            </div>
+
+            <div class="date-picker">
+              <img
+                class="date-picker__icon-calendar"
+                src="./assets/icons/clock.svg"
+                alt="clock-icon"
+              />
+              <p id="pickUpTimeData" class="date-picker__icon-time">10:00</p>
+
+              <img
+                class="date-picker__icon-dropdown"
+                src="./assets/icons/dropdown.svg"
+                alt="dropdown-icon"
+              />
+              <input
+                class="input -time"
+                type="time"
+                name="pickup-time"
+                value="10:00"
+                id="pickTime"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="group -row -gap-xxs -mb-lg">
+          <input type="checkbox" class="input -checkbox" id="checkbox-info" />
+          <label for="checkbox-info" class="label -lg"
+            >The driver’s age between 30 and 65?</label
+          >
+          <div class="tooltip-wrapper">
+            <img
+              src="./assets/icons/info.svg"
+              alt="info.svg"
+              class="tooltip-icon"
+            />
+            <p class="tooltip">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <ul class="group -column -gap-sm -mb-xl">
+          <li class="group__item -tick">No credit card fees</li>
+          <li class="group__item -tick">No change fees</li>
+          <li class="group__item -tick">Price match guarantee</li>
+        </ul>
+        <button class="button">Search</button>
+      </form>
+    </section>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
